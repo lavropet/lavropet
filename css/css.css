@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    /* это чтоб белых полосок не было по бокам */
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+/* в душе не выебал, что это правило толком значит, тупо повторил */
+
+div {
+    box-sizing: border-box;
+    /* это штоб элемент при отсупах не менял своего размера */
+}
+
+header {
+    background: url(../img/background_zal.png) no-repeat center top / cover;
+    /* штоб растянуло во всю ширь и не дублировалось */
+    padding-bottom: 210px;
+    /* просто наугад написал число */
+}
+
+.container {
+    width: 1030px;
+    margin: auto; 
+}
+
+.logo {
+    margin-top: 70px;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 70px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    margin-right: 45px;
+}
+
+.menu li a {
+    /* по идее можно и просто написать .menu a, я же ображаюсь только к ссылкам в этом теге */
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.title_first {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.white_box_header {
+    background-color: #ffffff;
+    width: 515px;
+    height: 215px;
+    float: right;
+    margin-top: 90px;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.white_box_header_title {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0;
+    /* потому что у тега р есть автоотступы */
+}
+
+.title_why {
+    font-size: 40px;
+    margin-top: 53px;
+}
+
+.services {
+    margin-top: 120px;
+}
+.service_item {
+    width: 290px;
+    float: left;
+    text-align: center;
+}
+
+.service_item h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.service_item:last-child {
+    float: right;
+}
+
+.service_item:nth-child(2) {
+    margin-left: 90px;
+}
+
+.choice {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.timetable {
+    background-color: seagreen;
+    width: 900px;
+    margin: auto;
+}
