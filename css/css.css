@@ -128,7 +128,63 @@ h1 {
 }
 
 .timetable {
-    background-color: seagreen;
-    width: 900px;
+    color: white;
+    width: 1030px;
+    /* пришлось записать ширину контейнера, иначе растягивается по ширине содержимого. Похуй же, наверное */
     margin: auto;
+    border-spacing: 0;
+    border: 1;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    border-collapse: separate;
+    
+}
+
+.timetable tr.timetable_header {
+    background-color: rgb(89, 207, 57);
+    text-decoration-color: white;
+    font-size: 24px;
+    height: 75px;
+}
+
+.timetable th.second_column {
+    text-align: left;
+}
+
+.timetable td.second_column {
+    text-align: left;
+}
+
+.timetable tr.grey {
+    background-color: grey;
+    border-radius: 10%;
+    text-align: center;
+    height: 75px;
+}
+
+.timetable tr.darkgrey {
+    background-color: rgb(85, 82, 82);
+    text-align: center;
+    height: 75px;
+}
+
+.timetable th.first_column {
+    width: 300px;
+}
+
+.timetable th.third_column {
+    width: 150px;
+}
+
+.after_table_text {
+    font-size: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.present {
+    margin-top: 70px;
+    background: url(../img/background_tickets.png) no-repeat center top / cover;
+    padding-bottom: 300px;
 }
