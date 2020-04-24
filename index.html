@@ -7,10 +7,11 @@
     <title>Shuric teacher&pidor</title>
 </head>
 <body>
+    <div id="wrapper">
+
+    
     <header>
-        <div class="container">
-            <!-- это для хэдера, штоб посчитать отступы в пикселях -->
-            <div class="heading clearfix">
+            <div class="heading-wrapper">
                 <!-- а это потому что когда указываешь флоаты, пидорский хтмл обнуляет высоту -->
                             <img src="img/logo.png" alt="HZ" class="logo"> 
                 <nav>
@@ -36,14 +37,14 @@
             </div> 
             <div class="titles">
                 <!-- это просто общая группа для заголовков -->
-                <div class="title_first">
-                    Закажите билет в кино
-                </div>
                 <h1>
-                    Всем покупателям подарок!
+                    Закажите билет в кино
                 </h1>
+                <h2 class="main-subheader">
+                    Всем покупателям подарок!
+                </h2>
             </div>
-        <div class="white_box_header">
+        <div class="white_box_wrapper">
             <p class="white_box_header_title">
                 Добро пожаловать!
             </p>
@@ -51,27 +52,27 @@
             <p class="white_box_header_text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
             <p class="white_box_header_text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
         </div>
-        </div>
+        
     </header>
   
     <section>
-        <div class="container">
-            <div class="title_why">
+        <div id="wrapper">
+            <div id="title_why">
                     Почему мы?
                     <!-- потому что иди нахуй, вот почему -->
             </div>
-            <div class="services clearfix">
-                <div class="service_item">
+            <div id="three-pics-wrapper">
+                <div id="service_item">
                     <img src="img/plenka.png" alt="Большие экраны">
                     <h3>Большие экраны</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <div class="service_item">
+                <div id="service_item">
                     <img src="img/truba.png" alt="Большие экраны">
                     <h3>Объемный звук</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
                 </div>
-                <div class="service_item">
+                <div id="service_item">
                     <img src="img/kreslo.png" alt="Большие экраны">
                     <h3>Удобные кресла</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -136,5 +137,6 @@
     <footer>
         
     </footer>
+    </div>
 </body>
 </html>

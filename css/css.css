@@ -4,20 +4,16 @@ body {
     margin: 0;
     /* это чтоб белых полосок не было по бокам */
 }
-
-.clearfix::after {
-    content: '';
-    display: table;
-    width: 100%;
-    clear: both;
-}
-/* в душе не выебал, что это правило толком значит, тупо повторил */
-
-div {
-    box-sizing: border-box;
-    /* это штоб элемент при отсупах не менял своего размера */
+#wrapper {
+    max-width: 1360px;
+    margin: 0 auto;
 }
 
+.heading-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 175px;
+}
 header {
     background: url(../img/background_zal.png) no-repeat center top / cover;
     /* штоб растянуло во всю ширь и не дублировалось */
@@ -25,18 +21,13 @@ header {
     /* просто наугад написал число */
 }
 
-.container {
-    width: 1030px;
-    margin: auto; 
-}
-
 .logo {
     margin-top: 70px;
-    float: left;
+
 }
 
 nav {
-    float: right;
+ 
     margin-top: 70px;
 }
 
@@ -69,6 +60,13 @@ nav {
 }
 
 h1 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 150px;
+}
+.main-subheader{
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -76,15 +74,16 @@ h1 {
     font-weight: bold;
     margin: 0;
 }
-
-.white_box_header {
+.white_box_wrapper {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
-    width: 515px;
-    height: 215px;
+    width: 45%;
     float: right;
-    margin-top: 90px;
-    padding: 13px;
-    box-sizing: border-box;
+    /* я выравниваю по правому краю саму обертку, а не элементы внутри */
+    margin-top: 5%;
+    margin-right: 5%;
+    padding: 1%;
 }
 
 .white_box_header_title {
@@ -94,27 +93,29 @@ h1 {
     /* потому что у тега р есть автоотступы */
 }
 
-.title_why {
+#title_why {
     font-size: 40px;
-    margin-top: 53px;
+    margin-top: 5%;
+    margin-left: 12.5%;
+    width: 25%;
+    text-align: center;
 }
 
 .services {
     margin-top: 120px;
 }
-.service_item {
-    width: 290px;
-    float: left;
+
+#three-pics-wrapper{
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 5%;
+   justify-content: space-around;
+    align-items: baseline;
+}
+
+#service_item {
     text-align: center;
-}
-
-.service_item h3 {
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
-.service_item:last-child {
-    float: right;
+    width: 25%;
 }
 
 .service_item:nth-child(2) {
